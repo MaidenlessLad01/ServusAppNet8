@@ -10,7 +10,7 @@
            HorizontalOptions="Center">
         <toolkit:MediaElement 
                              x:Name="SplashVideo"
-                             Source="c:\users\administrator\source\repos\servusappnet8\servusappnet8\resources\raw\background.mp4"
+                             Source="c:\users\administrator\source\repos\servusappnet8\servusappnet8\resources\raw\background1.mp4"
                              ShouldAutoPlay="True"
                              ShouldLoopPlayback="False"
                              ShouldShowPlaybackControls="False"
