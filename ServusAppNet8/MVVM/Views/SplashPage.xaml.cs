@@ -12,13 +12,13 @@ public partial class SplashPage : ContentPage
     private void LoadEmbeddedVideo()
     {
         var assembly = Assembly.GetExecutingAssembly();
-        var resourceName = "ServusAppNet8.Resources.Raw.background.mp4";
+        var resourceName = "ServusAppNet8.Resources.Raw.background1.mp4";
 
         using (var stream = assembly.GetManifestResourceStream(resourceName))
         {
             if (stream != null)
             {
-                var filepath = Path.Combine(FileSystem.CacheDirectory, "background.mp4");
+                var filepath = Path.Combine(FileSystem.CacheDirectory, "background1.mp4");
                 using (var fileStream = File.Create(filepath))
                 {
                     stream.CopyTo(fileStream);

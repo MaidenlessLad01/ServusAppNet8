@@ -5,8 +5,9 @@
              Shell.NavBarIsVisible="False"
              NavigationPage.HasNavigationBar="False"
              Title="LandingPageView"
-             BackgroundImageSource="bg1.jpg">
-    <Grid>
+             BackgroundImageSource="bg1.jpg"
+             >
+    <Grid x:Name="MainGrid">
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
                 <GradientStop Color="#4CFCD65F" Offset=".25"/>
@@ -19,14 +20,14 @@
             <RowDefinition Height=".6*"/>
             <RowDefinition Height=".4*"/>
         </Grid.RowDefinitions>
-
+        <Image x:Name="BGImage" Aspect="AspectFill"></Image>
         <VerticalStackLayout Grid.Row="1" Margin="20">
             <Label Text="Connect to the World"
                FontAttributes="Bold"
                Margin="0,0,0,5"
                FontSize="27"
                HorizontalTextAlignment="Start"/>
-            <Label Text="Connect with others and share memories kay baho man kag burat"
+            <Label Text="Connect and share memories with others around the world"
                FontSize="14"
                HorizontalTextAlignment="Start"/>
 

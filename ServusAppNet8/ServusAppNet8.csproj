@@ -56,12 +56,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidResource Remove="Platforms\Android\Resources\values\styles.xml" />
+	  <MauiAsset Remove="Resources\Raw\AboutAssets.txt" />
+	  <MauiAsset Remove="Resources\Raw\background.mp4" />
+	  <MauiAsset Remove="Resources\Raw\background1.mp4" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiAsset Remove="Resources\Raw\AboutAssets.txt" />
-	  <MauiAsset Remove="Resources\Raw\background.mp4" />
+	  <None Remove="Platforms\Android\Resources\values\styles.xml" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -93,6 +94,7 @@
 	<ItemGroup>
 	  <MultiDexMainDexList Include="Resources\Raw\AboutAssets.txt" />
 	  <EmbeddedResource Include="Resources\Raw\background.mp4" />
+	  <EmbeddedResource Include="Resources\Raw\background1.mp4" />
 	</ItemGroup>
 
 </Project>
